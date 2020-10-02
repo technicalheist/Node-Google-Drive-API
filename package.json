@@ -25,7 +25,4 @@
     "url": "https://github.com/technicalheist/Node-Google-Drive-API/issues"
   },
   "homepage": "https://github.com/technicalheist/Node-Google-Drive-API#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  }
 }
