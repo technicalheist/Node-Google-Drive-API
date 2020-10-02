@@ -1,10 +1,6 @@
 {
   "name": "gdrive-node",
-<<<<<<< HEAD
-  "version": "1.0.0",
-=======
-  "version": "1.0.2",
->>>>>>> 3e90018ffea0818851b8769a4527b47906a33d5c
+  "version": "1.0.1",
   "main": "index.js",
   "description": "Simple way to upload and manage google drive files ",
   "scripts": {
