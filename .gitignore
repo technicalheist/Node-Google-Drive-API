@@ -1,0 +1,10 @@
+credentials.json
+package-lock.json
+token.json
+files
+files/*
+node_modules
+node_modules/*
+modules/files/*
+modules/credentials.json
+modules/token.json

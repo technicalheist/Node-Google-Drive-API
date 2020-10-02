@@ -1,0 +1,35 @@
+{
+  "name": "gdrive-node",
+<<<<<<< HEAD
+  "version": "1.0.0",
+=======
+  "version": "1.0.2",
+>>>>>>> 3e90018ffea0818851b8769a4527b47906a33d5c
+  "main": "index.js",
+  "description": "Simple way to upload and manage google drive files ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "Google",
+    "Drive",
+    "api"
+  ],
+  "author": "Technical Heist",
+  "license": "MIT",
+  "dependencies": {
+    "googleapis": "^59.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/technicalheist/Node-Google-Drive-API.git"
+  },
+  "bugs": {
+    "url": "https://github.com/technicalheist/Node-Google-Drive-API/issues"
+  },
+  "homepage": "https://github.com/technicalheist/Node-Google-Drive-API#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
