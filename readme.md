@@ -18,23 +18,35 @@
 3. Click on Enable APIS and Services and enable gooogle drive api 
 4. Click on Credentials (Right Sidebar menu)
 5. Click on create credential
-6. Select OAuuth Client ID 
+6. Select OAuth Client ID 
 7. From Dropdown Application type select Tvs and Limited input device 
 8. Click on Create
-9. Now on Credentials page click on ddownload icon in OAuth 2.0 Client IDs section
+9. Now on Credentials page click on download icon in OAuth 2.0 Client IDs section
 10. rename this to credentials.json 
-11. open config.js inside modules folder  and set the path for credential_path see modules folder function for help
+11. open config.js inside modules folder and set the path for credential_path see modules folder function for help
 
-
-#### Code Structure 
-
-1. Include index.js where you want to use
+ Include index.js where you want to use
 ```
 const drive = require('./index'); 
 var config = require('./config'); ///your config file
 ```
 
-2. Authentication 
+##### Using NPM : npm i gdrive-node
+
+1. Follow the above procedure to get your credentials.json from the google developer console
+2. create a config.js file and paste : ```exports.creds = "credentials.json"```
+3. create app.js file and paste following code 
+
+
+```
+const drive = require('gdrive-node'); 
+var config = require('./config'); ///your config file
+```
+- you can also use .env file instead of config.js
+
+##### Now Call the following functions to operate. 
+
+1. Authentication 
 
 ```
 
@@ -47,7 +59,7 @@ drive.auth(config.creds)
 
 ````
 
-3. Upload file  use 'false' as 5th parameter for root directory or pass folder id for parent folder id
+2. Upload file  use 'false' as 5th parameter for root directory or pass folder id for parent folder id
 
 ```
 drive.upload(config.creds, 'test123.pdf', 'files/test.pdf', 'application/pdf', false, function(data){
@@ -56,7 +68,7 @@ drive.upload(config.creds, 'test123.pdf', 'files/test.pdf', 'application/pdf', f
 
 ```
 
-4. Create Folder : use 'false' for root directtory or pass folder id for parent folder id
+3. Create Folder : use 'false' for root directtory or pass folder id for parent folder id
 
 ```
 drive.createFolder(config.creds,'my test folder', false, function(id){
@@ -65,7 +77,7 @@ drive.createFolder(config.creds,'my test folder', false, function(id){
 
 ```
 
-5. Manually Authentication 
+4. Manually Authentication 
 
 ```
 const readline = require('readline'); //for manually verification only
