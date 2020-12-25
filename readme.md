@@ -31,7 +31,7 @@
 1. Include index.js where you want to use
 ```
 const drive = require('./index'); 
-var config = require('./config'); ///ypur config file
+var config = require('./config'); ///your config file
 ```
 
 2. Authentication 
